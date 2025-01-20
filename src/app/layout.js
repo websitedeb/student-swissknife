@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
                     rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
                 />
+                <title>Student Swiss Knife</title>
             </head>
             <body className="bg-gradient-to-r from-[#000000] via-[#570000] to-[#000000] lg:overflow-hidden md:overflow-y-auto">
                 <React.StrictMode>
