@@ -10,8 +10,6 @@ import {
   
   import Image from "next/image";
   import Link from "next/link";
-  
-  import icon from "@/assets/icon.png"
 
 export function Header(){
     return (
@@ -20,9 +18,11 @@ export function Header(){
         <div className="flex items-center space-x-2">
         <Link href="/" passHref>
             <Image
-              src={icon}
+              src="/icon.png"
               alt="Site Logo"
-              className="h-[50px] w-[50px]"
+              width={45}
+              height={45}
+              className="h-[45px] w-[45px]"
               quality={100}
             />
           </Link>

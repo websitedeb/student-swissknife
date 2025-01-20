@@ -47,7 +47,7 @@ function InputBox({ onSubmit }) {
         <Form {...form}>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="flex w-[300] items-center ml-[615] space-x-2 bg-gray-800 p-5 rounded-2xl"
+                className="flex w-72 items-center mx-auto space-x-2 bg-gray-800 p-5 rounded-2xl"
             >
                 <FormField
                     name="url"

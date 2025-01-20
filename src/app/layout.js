@@ -1,5 +1,6 @@
 import "./globals.css";
 import { ReactQueryProvider } from "@/app/(provider)/query"; 
+import React from "react";
 
 export default function RootLayout({ children }) {
     return (
@@ -14,9 +15,11 @@ export default function RootLayout({ children }) {
                 />
             </head>
             <body className="bg-gradient-to-r from-[#000000] via-[#570000] to-[#000000] lg:overflow-hidden md:overflow-y-auto">
-                <ReactQueryProvider>
-                    {children}
-                </ReactQueryProvider>
+                <React.StrictMode>
+                    <ReactQueryProvider>
+                        {children}
+                    </ReactQueryProvider>
+                </React.StrictMode>
             </body>
         </html>
     );
