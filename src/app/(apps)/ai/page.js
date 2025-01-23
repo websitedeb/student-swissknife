@@ -68,6 +68,7 @@ export default function AI() {
       return response.json();
     },
     enabled: !!prompt,
+    staleTime: Infinity
   });
 
   function handleFormSubmit(data) {
