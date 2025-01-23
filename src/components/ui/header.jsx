@@ -44,20 +44,15 @@ export function Header(){
               </MenubarItem>
             </Link>
             <MenubarSeparator />
-            {/*<Link href="/ai" passHref>
-              <MenubarItem asChild>
-                <div>
-                  <i className="bi bi-stars"></i> //UN-COMMENT WHEN A.I PAGE IS DONE
-                  &nbsp;
-                  <h6>A.I</h6>
-                </div>
-              </MenubarItem>
-            </Link>*/}
-            <MenubarItem disabled>
-              <i className="bi bi-stars"></i>
-              &nbsp;
-              <h6>A.I</h6>
-            </MenubarItem>
+              <Link href="/ai" passHref>
+                <MenubarItem asChild>
+                  <div>
+                    <i className="bi bi-stars"></i>
+                    &nbsp;
+                    <h6>A.I</h6>
+                  </div>
+                </MenubarItem>
+              </Link>
             <MenubarSeparator />
             {/*<Link href="/player" passHref>
               <MenubarItem asChild>
