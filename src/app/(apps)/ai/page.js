@@ -80,7 +80,7 @@ export default function AI() {
       <Header />
       &nbsp;&nbsp;
       <div className="m-8">
-        <ChatMessageList className="bg-black bg-opacity-70 text-white h-96 max-h-96 min-h-96">
+        <ChatMessageList className="bg-black bg-opacity-70 text-white h-96 max-h-[500px] min-h-[500px]">
           {isLoading && (
             <>
               <S>{prompt}</S>
@@ -98,7 +98,7 @@ export default function AI() {
           {ret?.response && (
             <>
               <S>{prompt}</S>
-              <R>
+              <R cop={ret.response}>
                 <Markdown>{ret.response}</Markdown>
               </R>
             </>
