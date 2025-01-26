@@ -13,7 +13,7 @@ export function R({children, cop=""}){
 
     return (
         <ChatBubble variant='received'>
-            <ChatBubbleAvatar fallback='✨'/>
+            <ChatBubbleAvatar fallback={<i className="bi bi-stars"></i>}/>
             <ChatBubbleMessage variant='received' className="bg-gray-900">
                 {children}
                 <br/>
