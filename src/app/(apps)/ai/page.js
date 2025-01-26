@@ -28,6 +28,7 @@ function Inputcomp({ onSubmit }) {
         <form className="flex space-x-2" onSubmit={handleSubmit(onSubmit)}>
           <Input
             className="w-96 font-mono"
+            isTextarea={true}
             {...register("prompt")}
             aria-label="Enter prompt"
           />

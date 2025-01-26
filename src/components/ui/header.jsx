@@ -54,21 +54,16 @@ export function Header(){
                 </MenubarItem>
               </Link>
             <MenubarSeparator />
-            {/*<Link href="/player" passHref>
-              <MenubarItem asChild>
-                <div>
-                  <i className="bi bi-stars"></i> //UN-COMMENT WHEN PLAYER PAGE IS DONE
-                  &nbsp;
-                  <h6>A.I</h6>
-                </div>
-              </MenubarItem>
-            </Link>*/}
-            <MenubarItem disabled>
-              <i className="bi bi-play-btn-fill"></i>
-              &nbsp;
-              <h6>Video Player</h6>
-            </MenubarItem>
-          </MenubarContent>
+              <Link href="/player" passHref>
+                <MenubarItem asChild>
+                  <div>
+                    <i className="bi bi-play-btn-fill"></i>
+                    &nbsp;
+                    <h6>Player</h6>
+                  </div>
+                </MenubarItem>
+              </Link>
+            </MenubarContent>
         </MenubarMenu>
       </Menubar>
       <Separator className="bg-red-950"/>
