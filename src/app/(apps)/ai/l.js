@@ -3,7 +3,7 @@ import { ChatBubble, ChatBubbleAvatar, ChatBubbleMessage } from "@/components/ui
 export function L(){
     return (
         <ChatBubble variant='received'>
-            <ChatBubbleAvatar fallback='✨'/>
+            <ChatBubbleAvatar fallback={<i className="bi bi-stars"></i>}/>
             <ChatBubbleMessage variant='received' className="bg-gray-900" isLoading/>
         </ChatBubble>
     );
